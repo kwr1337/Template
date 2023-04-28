@@ -33,7 +33,8 @@ namespace Template_4337
 
         private void Sharapov_4337_Click(object sender, RoutedEventArgs e)
         {
-
+            Sharapov_4337 s = new Sharapov_4337();
+            s.Show();
         }
     }
 }

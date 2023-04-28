@@ -17,7 +17,7 @@
     <Grid>
         <StackPanel
             VerticalAlignment="Center">
-            <TextBlock Text="4337 - Шарапов Ислам - 17"
+            <TextBlock Text="4337 - Шарапов Ислам - 19"
                        FontSize="25"/>
             <TextBlock
                 FontSize="20">           
