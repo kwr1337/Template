@@ -6,25 +6,30 @@
         xmlns:local="clr-namespace:Template_4337"
         mc:Ignorable="d"
         Title="Sharapov_4337" Height="450" Width="800">
-    <Window.Resources>
-        <Style
-            TargetType="{x:Type TextBlock}">
-            <Setter
-                Property="HorizontalAlignment"
-                Value="Center"/>
-        </Style>
-    </Window.Resources>
     <Grid>
-        <StackPanel
-            VerticalAlignment="Center">
-            <TextBlock Text="4337 - Шарапов Ислам - 19"
-                       FontSize="25"/>
-            <TextBlock
-                FontSize="20">           
-                <Hyperlink NavigateUri="https://github.com/kwr1337" RequestNavigate="Hyperlink_RequestNavigate">
-                    github link
-                </Hyperlink>
-            </TextBlock>
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="11*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <UniformGrid Grid.Row="0" Columns="2">
+                <Button x:Name="BnExport"
+Click="BnExport_Click">Экспорт в Excel</Button>
+                <Button x:Name="BnImport"
+Click="BnImport_Click">Импорт данных</Button>
+            </UniformGrid>
+
+        </Grid>
+        
+        <Grid Grid.Row="1">
+            <UniformGrid Grid.Row="0" Columns="2">
+                <Button x:Name="importJson"
+                        Click="importJson_Click">Импорт Json</Button>
+                <Button x:Name="Exword"
+                        Click="Exword_Click">Экспорт в Word</Button>
+            </UniformGrid>
+
+        </Grid>
     </Grid>
 </Window>
